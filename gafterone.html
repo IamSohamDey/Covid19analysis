@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      /* Adjust plot size */
+      .plot {
+        width: 80%;
+        height: 500px;
+      }
+      
+      /* Center plot horizontally */
+      .plot-container {
+        display: flex;
+        justify-content: center;
+      }
+      
+      /* Center plot vertically */
+      .plot img {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">HOME</a>
+    </nav>
+    <div class="plot-container">
+      <div class="plot">
+        <img src="data:image/png;base64,{{ plot_url17 }}" alt="Plot">
+      </div>
+    </div>
+  </body>
+</html>

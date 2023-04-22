@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">HOME</a>
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Confirmed Cases</h5>
+              <img src="data:image/png;base64,{{ plot_url5 }}" alt="Confirmed Cases">
+            </div>
+          </div>
+        </div><br>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Active Cases</h5>
+              <img src="data:image/png;base64,{{ plot_url6 }}" alt="Active Cases">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">New Cases</h5>
+              <img src="data:image/png;base64,{{ plot_url7 }}" alt="New Cases">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Total Deaths</h5>
+              <img src="data:image/png;base64,{{ plot_url8 }}" alt="Total Deaths">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">New Deaths</h5>
+              <img src="data:image/png;base64,{{ plot_url9 }}" alt="New Deaths">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">New Recovered</h5>
+              <img src="data:image/png;base64,{{ plot_url10 }}" alt="New Recovered">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+  </body>
+</html>
